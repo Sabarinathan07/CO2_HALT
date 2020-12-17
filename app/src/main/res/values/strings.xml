@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">CO2 halt</string>
     <string name="title_activity_login">LoginActivity</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
+    <string name="string_email">Email</string>
+    <string name="string_password">Password</string>
+    <string name="string_sign_up">Sign Up</string>
+    <string name="string_login">Log In</string>
+    <string name="strin_new_acc">Create a new account</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>

@@ -2,7 +2,8 @@
 <resources>
     <color name="primaryDark">#042b35</color>
     <color name="primary">#073a47</color>
-    <color name="green">#41cd8c</color>
+    <color name="accent">#41cd8c</color>
+    <color name="fb">#1878f2</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
