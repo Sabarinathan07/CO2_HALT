@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary"
-    android:elevation="2dp"
-    tools:context=".login.loginActivity">
+    tools:context=".login.SignUpActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -37,105 +36,69 @@
 
 
         <EditText
-            android:id="@+id/editTextEmail"
+            android:id="@+id/editTextTextPersonName"
             android:layout_width="350dp"
-
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="70dp"
             android:ems="10"
-            android:hint="@string/string_email"
-            android:inputType="textEmailAddress"
+            android:hint="@string/full_name"
+            android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/string_email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword2"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:ems="10"
             android:hint="@string/string_password"
+
             android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
-            />
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword3"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
 
         <Button
-            android:id="@+id/bt_login"
+            android:id="@+id/button2"
             android:layout_width="350dp"
             android:layout_height="70dp"
             android:layout_marginTop="40dp"
+            android:background="@color/accent"
             android:backgroundTint="@color/accent"
             android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
             android:drawableTint="@color/white"
-
             android:elevation="2dp"
-            android:text="@string/string_login"
+            android:text="@string/string_sign_up"
             app:cornerRadius="10dp"
             app:layout_constraintEnd_toEndOf="parent"
-
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
-
-        <Button
-            android:id="@+id/bt_sign_up"
-            android:layout_width="350dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="30dp"
-            android:backgroundTint="@color/white"
-            android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
-            android:drawableTint="@color/accent"
-            android:elevation="2dp"
-
-            android:text="@string/strin_new_acc"
-            android:textColor="@color/accent"
-            app:cornerRadius="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:strokeColor="@color/accent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/bt_login" />
-
-
-        <com.facebook.login.widget.LoginButton
-            android:id="@+id/login_button"
-            android:layout_width="160dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginBottom="50dp"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
-            android:paddingLeft="15dp"
-            android:textSize="10sp"
-            app:cornerRadius="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/sign_in_button"
-            app:layout_constraintHorizontal_bias="0.433"
-            app:layout_constraintStart_toStartOf="parent"
-
-            />
-
-        <com.google.android.gms.common.SignInButton
-            android:id="@+id/sign_in_button"
-            android:layout_width="160dp"
-            android:layout_height="60dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="50dp"
-            app:cornerRadius="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:text="----------------------------  or continue with--------------------------------"
-            android:layout_marginTop="25dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/bt_sign_up" />
-
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
