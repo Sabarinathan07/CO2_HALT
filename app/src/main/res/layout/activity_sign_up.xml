@@ -36,7 +36,7 @@
 
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/fullname"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="70dp"
@@ -48,7 +48,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
+            android:id="@+id/email"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -57,10 +57,10 @@
             android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+            app:layout_constraintTop_toBottomOf="@+id/fullname" />
 
         <EditText
-            android:id="@+id/editTextTextPassword2"
+            android:id="@+id/password"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -70,10 +70,10 @@
             android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+            app:layout_constraintTop_toBottomOf="@+id/email" />
 
         <EditText
-            android:id="@+id/editTextTextPassword3"
+            android:id="@+id/confirmPassword"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -82,10 +82,10 @@
             android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+            app:layout_constraintTop_toBottomOf="@+id/password" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/bt_signUp"
             android:layout_width="350dp"
             android:layout_height="70dp"
             android:layout_marginTop="40dp"
@@ -98,7 +98,7 @@
             app:cornerRadius="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3" />
+            app:layout_constraintTop_toBottomOf="@+id/confirmPassword" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

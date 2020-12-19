@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
 
 import com.example.co2halt.MainActivity;
 import com.example.co2halt.R;
@@ -25,6 +27,11 @@ public class loginActivity extends AppCompatActivity {
     int RC_SIGN_IN=0;
     SignInButton googleSignIn;
     GoogleSignInClient mGoogleSignInClient;
+    ImageView imageView;
+    EditText email,password;
+    Button login,signUp;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +39,29 @@ public class loginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         googleSignIn = findViewById(R.id.sign_in_button);
+        imageView = findViewById(R.id.imageView);
+        email = findViewById(R.id.editTextEmail);
+        password = findViewById(R.id.editTextTextPassword);
+        login = findViewById(R.id.bt_login);
+        signUp = findViewById(R.id.bt_sign_up);
+
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i  = new Intent(loginActivity.this,MainActivity.class);
+                startActivity(i);
+            }
+        });
+
+        signUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(loginActivity.this,SignUpActivity.class);
+                startActivity(i);
+            }
+        });
+
 
         googleSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
